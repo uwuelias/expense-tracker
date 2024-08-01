@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.input-pair {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-pair label {
+  margin-bottom: 5px;
+}
+
+.input-pair select,
+.input-pair input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 2rem;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.expense-table thead {
+  background-color: #f4f4f4;
+}
+
+.expense-table th {
+  background-color: #f8f8f8;
+  color: #333;
+  font-weight: bold;
+}
+
+.expense-table tr:hover {
+  background-color: #f1f1f1;
+}
